@@ -4,18 +4,21 @@
   <Main :name="items[0].name" :price="items[0].price" />
   <Main name="りんご" price="100" />
   <Footer />
+  <Axios />
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Main from "./components/Main.vue";
+import Axios from "./components/Axios.vue"
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    Main
+    Main,
+    Axios
     
   },
   data: () => {

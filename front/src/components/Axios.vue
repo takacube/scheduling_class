@@ -1,0 +1,41 @@
+<template>
+  <div>
+      <p>{{posts}}</p>
+      <p>{{posts}}</p>
+      <p>{{postman['content-length']}}</p>
+  </div>
+</template>
+<script>
+    import axios from 'axios' //追記
+    export default {
+        data(){
+            return {
+            posts: [],
+            postman: []
+            }
+        },
+        created() {
+            this.test(),
+            this.test2()
+        },
+        methods: {
+            test: function(){
+            axios.get('https://httpbin.org/get').then(res=>{
+                console.log(res)
+                this.posts = res.headers
+            }).catch(err=>{
+                console.log(err)
+            })
+            },
+            
+            test2: function(){
+            axios.get('https://httpbin.org/get').then(res=>{
+                console.log(res)
+                this.postman = res.headers
+            }).catch(err=>{
+                console.log(err)
+            })
+            }
+        }
+    }
+</script>
