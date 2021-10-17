@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <header>
     <ul>
       <li class="top">SCHEDULE</li>
       <div class="menu">
@@ -8,7 +8,7 @@
         <li><a href="">Jeneral</a></li>
       </div>
     </ul>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -23,24 +23,28 @@ export default {
   text-align: left;
   position: absolute;
   left:  50px;
-  font-size: 150%;
+  font-size: 270%;
+  top: 7%;
 }
 
 .menu {
   list-style-type: none;
-  padding: 0;
+  
   text-align: right;
 }
 li {
   display: inline-block;
   margin: 0 10px;
-  padding: 30px
+  padding: 20px
 }
 a {
   color: #ebf4f0;
 }
-.hello {
+header {
+  position: absolute;
   background-color: rgb(35, 213, 240);
+  width: 100%;
+  top: 0;
 }
 
 </style>
