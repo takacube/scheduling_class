@@ -24,7 +24,8 @@ export default {
   position: absolute;
   left: 50px;
   font-size: 270%;
-  top: 7%;
+  top: 0%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .menu {
@@ -42,7 +43,6 @@ a {
 }
 
 .header {
-  position: absolute;
   background-color: rgb(35, 213, 240);
   width: 100%;
   top: 0;

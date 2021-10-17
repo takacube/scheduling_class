@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>© All rights reserved by webcampnavi.</p>
+    <p>© All rights reserved by Takanao Company.</p>
   </div>
 </template>
 
