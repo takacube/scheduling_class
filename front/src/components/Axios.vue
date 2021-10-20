@@ -11,12 +11,14 @@
         data(){
             return {
             posts: [],
-            postman: []
+            postman: [],
+            post_content: []
             }
         },
         created() {
             this.test(),
-            this.test2()
+            this.test2(),
+            this.test_post()
         },
         methods: {
             test: function(){
@@ -27,13 +29,18 @@
                 console.log(err)
             })
             },
-            
+
             test2: function(){
             axios.get('https://httpbin.org/get').then(res=>{
                 console.log(res)
                 this.postman = res.headers
             }).catch(err=>{
                 console.log(err)
+            })
+            },
+            test_post: function(){
+            axios.post('', headers).then(res=>{
+                this.post_content = res
             })
             }
         }
