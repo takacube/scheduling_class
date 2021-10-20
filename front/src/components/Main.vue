@@ -4,6 +4,7 @@
     {{ name }}: {{ price }}円
     
   </div>
+
 </template>
 
 <script>
@@ -22,7 +23,6 @@ export default {
         text-align: center;
         color: palevioletred;
     }
-    
 </style>
 
 
