@@ -39,7 +39,7 @@
             })
             },
             test_post: function(){
-            axios.post('', headers).then(res=>{
+            axios.post('').then(res=>{
                 this.post_content = res
             })
             }
