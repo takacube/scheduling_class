@@ -2,7 +2,6 @@
   
   <Header />
   <Main :name="items[0].name" :price="items[0].price" />
-  <Main name="りんご" price="100" />
   <Footer />
   <Axios />
 </template>

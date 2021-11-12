@@ -1,7 +1,6 @@
 <template>
   <div>
       <p>{{posts}}</p>
-      <p>{{posts}}</p>
       <p>{{postman['content-length']}}</p>
   </div>
 </template>

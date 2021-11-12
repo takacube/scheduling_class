@@ -1,10 +1,12 @@
 <template>
-  <div class="test">
-    <!-- nameとpriceの値を表示するためのテンプレートです。 -->
-    {{ name }}: {{ price }}円
-    
-  </div>
-
+    <div id="task">
+        <ul>
+            <li><h3>電気数学</h3></li>
+            <li>3回目</li>
+            <li>復習日一覧:</li>
+        </ul> 
+        <button>完了</button>
+    </div>
 </template>
 
 <script>
@@ -18,10 +20,18 @@ export default {
 };
 </script>
 <style scoped>
-    .test {
-        font-size: 30px;
+    * {
+    list-style: none;
+    }
+
+    #task {
+        background-color: beige;
+        width: 500px;
+        margin: auto;
+    }
+
+    #task ul {
         text-align: center;
-        color: palevioletred;
     }
 </style>
 
