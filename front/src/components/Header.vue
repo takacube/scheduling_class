@@ -1,13 +1,17 @@
 <template>
-  <div class="header">
-    <ul>
-      <li class="top">SCHEDULE</li>
-      <div class="menu">
-        <li><a href="">App</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Jeneral</a></li>
+  <div id="header">
+      <div>
+          <h2>Schedule</h2>
       </div>
-    </ul>
+      <div class="menu-list">
+          <ul>
+              <li><a href="#">All</a></li>
+              <li><a href="#">自習タスク</a></li>
+              <li><a href="#">テスト予定</a></li>
+              <li><a href="#">TOEFL</a></li>
+              <li><a href="#">もくもく会</a></li>
+          </ul>
+      </div>
   </div>
 </template>
 
@@ -19,32 +23,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.top {
-  text-align: left;
-  position: absolute;
-  left: 50px;
-  font-size: 270%;
-  top: 0%;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.menu {
-  list-style-type: none;
-
-  text-align: right;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-  padding: 20px;
-}
-a {
-  color: #ebf4f0;
-}
-
-.header {
-  background-color: rgb(35, 213, 240);
-  width: 100%;
-  top: 0;
-}
+  a {
+      text-decoration: none;
+  }
+  #header {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  #header ul {
+      display: flex;
+      list-style-type: none;
+  }
+  
+  #header li {
+      padding: 10px;
+  }
 </style>
